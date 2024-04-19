@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Andromeda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="lives-container">
+        <img src="heart2.png" alt="Heart" class="life-icon" id="life1">
+    </div>
+    <canvas id="game" width="600" height="600">This element is not supported</canvas>
+  </div>
+
+<script src="js/game.js"></script>
+<script>
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            pauseGame(); 
+        }
+    });
+
+    function pauseGame() {
+        alert("Game Paused"); 
+    }
+</script>
+</body>
+</html>

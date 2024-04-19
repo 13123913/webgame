@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Game - Start Screen</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="start-screen">
+        <h1>Andromeda</h1>
+       <div class = "jey">
+	   
+	    <button onclick="startGame()">Старт</button>
+        <button onclick="changeShip()">Изменить корабль</button>
+        <button onclick="showInstructions()">Правила</button>
+		</div>
+    </div>
+
+    <script>
+        function startGame() {
+            // Перенаправление на экран с игрой 
+            window.location.href = "index.html";
+        }
+
+        function changeShip() {
+            // Логика смены корабля
+            window.location.href = "ship.html"
+        }
+
+        function showInstructions() {
+            // Логика показа инструкций
+            window.location.href = "instruction.html"
+            
+        }
+    </script>
+</body>
+</html>
+
+
+

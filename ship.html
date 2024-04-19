@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Game - Ship Selection</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="selection-buttons">
+      <button class="button" onclick="BackGame()">Назад</button>
+      <button onclick="SH(1)">Корабль Метеор</button>
+      <button onclick="SH(2)">Корабль тарелка</button>
+      <button onclick="startGame()">Старт</button>
+     
+    </div>
+    <script>
+      function BackGame() {
+          // Логика для начала игры
+          window.location.href = "start.html";
+      }
+  </script>
+    <script src="js/game.js"></script>
+    <script>
+      function startGame() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

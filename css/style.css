@@ -1,0 +1,36 @@
+body {
+
+background-image: linear-gradient(
+    315deg,
+    #1ac08e 0%,
+    #1385b9 74%
+  );
+padding: 0;
+margin: 0;
+}
+
+#wrapper {
+	width:50%;
+	margin:0 auto;
+}
+
+
+#game {
+	width: 100%;
+}
+
+#lives-container {
+    position: absolute;
+    top: 25px;
+    left: 520px;   
+    border-radius: 30px; /* Добавим скругленные углы */
+}
+
+.life-icon {
+    width: 50px; /* Уменьшите размер иконки жизни по вашему усмотрению */
+    height: auto;
+    /* Добавьте отступ между иконками жизни, если нужно */
+}
+
+
+

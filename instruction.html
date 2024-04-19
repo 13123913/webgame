@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игровые Правила</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f0c29;
+            background-image: linear-gradient(315deg, #0f0c29 0%, #302b63 74%);
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .rules-box {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #06beb6;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #068d9d;
+        }
+    </style>
+</head>
+<body>
+    <div class="rules-box">
+        <h1>Правила игры "Andromeda"</h1>
+        <p>Вам предстоит управлять космическим кораблём в галактике Андромеда, стреляя по Астероидам и избегая столкновений.</p>
+        <p>У вас есть 1 жизнь. Потеря жизни происходит при столкновении с Астероидами.</p>
+        <p>Вы можете перед началом игры выбрать подходящий вам корабль, нажав на кнопку выбрать корабль</p>
+        <p>Соберите как можно больше очков уничтожая врагов! </p>
+        <button class="button" onclick="startGame()">Назад</button>
+    </div>
+
+    <script>
+        function startGame() {
+            // Логика для начала игры
+            window.location.href = "start.html";
+        }
+    </script>
+</body>
+</html>

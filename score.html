@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Game - Main Screen</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main-screen">
+        <h1>Andromeda</h1>
+        <div id="final-score-container">
+            <!-- Здесь будет отображаться финальный счет -->
+        </div>
+		<button onclick="scoreend()">Menu</button>
+		<button onclick="reload()">Play</button>
+    </div>
+
+    <script>
+	function reload() {
+            // Перенаправление на экран с игрой 
+            window.location.href = "index.html";
+        }
+	function scoreend() {
+            // Перенаправление на экран с игрой 
+            window.location.href = "start.html";
+        }
+        // Функция для получения параметров из URL
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Получаем финальный счет из URL и отображаем его
+        var finalScore = getParameterByName('score');
+        if (finalScore !== null) {
+            var finalScoreContainer = document.getElementById('final-score-container');
+            finalScoreContainer.innerHTML = "<p>Финальный счет: " + finalScore + " очков.</p>";
+        }
+    </script>
+</body>
+</html>
